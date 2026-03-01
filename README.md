@@ -75,8 +75,9 @@ This entire flow runs automatically without manual intervention.
 - Pandas  
 - Scikit-Learn (Logistic Regression)
 
-  # Detailed Implementation
+# Detailed Implementation
 
+---
 ## 1. Automated Ingestion (Event-Driven Architecture)
 
 ### Objective
@@ -99,7 +100,8 @@ When a new CSV file is uploaded:
 - No manual `COPY` commands are required.  
 - Fully event-driven ingestion.
 
-  ## 2. Raw Layer
+---
+## 2. Raw Layer
 
 **Table:** `RAW_SCHEMA.CUSTOMER_RAW`
 
