@@ -46,6 +46,8 @@ Predictions are stored in a scoring table.
 
 This entire flow runs automatically without manual intervention.
 
+<img width="1024" height="565" alt="image" src="https://github.com/user-attachments/assets/c4348247-9776-409d-a5fe-f4ca2ffcbf25" />
+
 # Tech Stack
 
 ## Cloud & Storage
