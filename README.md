@@ -77,7 +77,6 @@ This entire flow runs automatically without manual intervention.
 
 # Detailed Implementation
 
----
 ## 1. Automated Ingestion (Event-Driven Architecture)
 
 ### Objective
@@ -100,7 +99,6 @@ When a new CSV file is uploaded:
 - No manual `COPY` commands are required.  
 - Fully event-driven ingestion.
 
----
 ## 2. Raw Layer
 
 **Table:** `RAW_SCHEMA.CUSTOMER_RAW`
@@ -112,8 +110,6 @@ When a new CSV file is uploaded:
 - Act as a landing zone.  
 
 This layer ensures separation between ingestion and transformation logic.
-
----
 
 ## 3. Change Data Capture (CDC)
 
@@ -143,8 +139,6 @@ Process only newly ingested data instead of reprocessing the entire dataset.
 - No duplicate processing  
 - Efficient compute usage  
 - Near real-time transformation  
-
----
 
 ## 4. Clean Layer
 
@@ -176,8 +170,6 @@ The stored procedure writes logs after every execution.
 
 This simulates production-grade monitoring.
 
----
-
 ## 6. Data Governance
 
 ### Column-Level Security (Masking Policy)
@@ -191,8 +183,6 @@ Applied a masking policy to the `EMAIL` column.
 
 Demonstrates secure data sharing.
 
----
-
 ### Row-Level Security (Row Access Policy)
 
 Restricted `REGION` visibility by role.
@@ -203,8 +193,6 @@ Restricted `REGION` visibility by role.
 - Public role sees limited subset  
 
 Shows enterprise RBAC implementation.
-
----
 
 ## 7. Streamlit Dashboard
 
@@ -230,7 +218,6 @@ The dashboard respects:
 - Row access policies  
 - Role-based permissions  
 
----
 
 ## 8. Machine Learning Integration
 
