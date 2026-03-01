@@ -101,6 +101,8 @@ When a new CSV file is uploaded:
 - No manual `COPY` commands are required.  
 - Fully event-driven ingestion.
 
+<img width="1470" height="875" alt="Screenshot 2026-03-01 at 10 27 04 PM" src="https://github.com/user-attachments/assets/9ab6aba9-81fd-4c1b-a7fa-16b48eada920" />
+
 ## 2. Raw Layer
 
 **Table:** `RAW_SCHEMA.CUSTOMER_RAW`
@@ -142,6 +144,9 @@ Process only newly ingested data instead of reprocessing the entire dataset.
 - Efficient compute usage  
 - Near real-time transformation  
 
+<img width="1470" height="832" alt="Screenshot 2026-03-01 at 10 28 52 PM" src="https://github.com/user-attachments/assets/c810f2ce-2109-48ba-b1b2-3cb0eeb4b422" />
+
+
 ## 4. Clean Layer
 
 **Table:** `PROCESSED_SCHEMA.CUSTOMER_CLEAN`
@@ -172,6 +177,9 @@ The stored procedure writes logs after every execution.
 
 This simulates production-grade monitoring.
 
+<img width="1470" height="811" alt="Screenshot 2026-03-01 at 10 29 26 PM" src="https://github.com/user-attachments/assets/3f565ec3-95f4-47c0-8a84-2d4e5087b1bc" />
+
+
 ## 6. Data Governance
 
 ### Column-Level Security (Masking Policy)
@@ -195,6 +203,9 @@ Restricted `REGION` visibility by role.
 - Public role sees limited subset  
 
 Shows enterprise RBAC implementation.
+
+<img width="1469" height="810" alt="Screenshot 2026-03-01 at 10 31 42 PM" src="https://github.com/user-attachments/assets/3d15c4a8-eb78-4b88-81cc-5e1c6d8ccc8e" />
+
 
 ## 7. Streamlit Dashboard
 
@@ -220,6 +231,9 @@ The dashboard respects:
 - Row access policies  
 - Role-based permissions  
 
+<img width="1462" height="835" alt="Screenshot 2026-03-01 at 10 33 26 PM" src="https://github.com/user-attachments/assets/eafad378-7f45-4d9c-9776-54f77bc5bc3c" />
+<img width="1470" height="838" alt="Screenshot 2026-03-01 at 10 33 48 PM" src="https://github.com/user-attachments/assets/50acb1e1-81ae-4ba1-823f-33a882af39e3" />
+<img width="1470" height="834" alt="Screenshot 2026-03-01 at 10 33 59 PM" src="https://github.com/user-attachments/assets/9fe3d502-113c-4a49-a3d4-78c8487517c9" />
 
 ## 8. Machine Learning Integration
 
@@ -239,4 +253,6 @@ Integrate batch ML scoring inside Snowflake.
 
 **Target:**
 
-- `STATUS` (binary classification based on age threshold)  
+- `STATUS` (binary classification based on age threshold)
+
+<img width="1470" height="812" alt="Screenshot 2026-03-01 at 10 35 02 PM" src="https://github.com/user-attachments/assets/b8214c4a-cb53-4c26-8971-f3ed37e3e177" />
